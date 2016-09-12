@@ -11,11 +11,12 @@ public class UserMenu {
 		//You can create the text of the menu and store it in a variable.
 		//NOTE: the "\n" is an escape character which inserts a new line
 		//  at the end of the string.
-		final String USER_MENU = "1. Add two numbers\n" + 
-					  			 "2. Area of Rectangle\n" +
-		              			 "3. Remainder of two numbers\n" +
-		              			 "4. Exit Program\n" +
-		              			 "Enter (1-4) for choice: ";
+		final String USER_MENU = 
+		   "1. Add two numbers\n" + 
+			"2. Area of Rectangle\n" +
+		   "3. Remainder of two numbers\n" +
+		   "4. Exit Program\n" +
+		   "Enter (1-4) for choice: ";
 
 		System.out.print(USER_MENU);
 		int choice = in.nextInt();
