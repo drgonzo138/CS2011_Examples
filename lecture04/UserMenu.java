@@ -5,6 +5,8 @@ public class UserMenu {
 		Scanner in = new Scanner(System.in);
 
 		//You can create the text of the menu and store it in a variable.
+		//NOTE: the "\n" is an escape character which inserts a new line
+		//  at the end of the string.
 		final String USER_MENU = "1. Add two numbers\n" + 
 					  			 "2. Area of Rectangle\n" +
 		              			 "3. Remainder of two numbers\n" +
@@ -32,19 +34,5 @@ public class UserMenu {
 		else if(choice == 4) {
 			System.exit(0);
 		}
-
-
-
-		// System.out.println("1. Add two numbers");
-		// System.out.println("2. Area of Rectangle");
-		// System.out.println("3. Remainder of two numbers");
-		// System.out.println("Enter (1-3) for choice: ");
-
-
-
-
-
-
-
 	}
 }
