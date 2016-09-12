@@ -1,3 +1,7 @@
+/*
+	Shows how to create a simple user choice menu.
+*/
+
 import java.util.Scanner;
 
 public class UserMenu {
