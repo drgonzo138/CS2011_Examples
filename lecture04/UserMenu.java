@@ -1,5 +1,6 @@
 /*
-   Shows how to create a simple user choice menu.
+   -Shows how to create a simple user choice menu.
+   -Uses an if selection statement to implement the choices.
 */
 
 import java.util.Scanner;
@@ -32,8 +33,10 @@ public class UserMenu {
          int x = in.nextInt();
          int y = in.nextInt();
 
+         //Validate that x and y are not negative.
          if (x < 0) || (y < 0) {
             System.out.println("ERROR: x or y cannot be negative.");
+            System.out.println("Program will now exit!");
             System.exit(1);
          }
 
