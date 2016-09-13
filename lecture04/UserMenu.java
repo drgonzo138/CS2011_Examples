@@ -18,26 +18,41 @@ public class UserMenu {
          "4. Exit Program\n" +
          "Enter (1-4) for choice: ";
 
+      //Define constants for the menu choices
+      int ADD_CHOICE = 1;
+      int AREA_CHOICE = 2;
+      int REMAINDER_CHOICE = 3;
+      int EXIT_CHOICE = 4;   
+
       System.out.print(USER_MENU);
       int choice = in.nextInt();
 
-      if (choice == 1) {
+      if (choice == ADD_CHOICE) {
          System.out.print("Enter two numbers: ");
          int x = in.nextInt();
          int y = in.nextInt();
 
-         int sum = x + y;
+         if (x < 0) || (y < 0) {
+            System.out.println("ERROR: x or y cannot be negative.");
+            System.exit(1);
+         }
 
          System.out.println("The sum of " + x + ", " + y + " is " + sum);
       }
-      else if(choice == 2) {
+      else if(choice == AREA_CHOICE) {
          //code for option 2
       }
-      else if(choice == 3) {
+      else if(choice == REMAINDER_CHOICE) {
          //code for option 3
       }
-      else if(choice == 4) {
+      else if(choice == EXIT_CHOICE) {
+         System.out.println("Program will now exit!");
          System.exit(0);
+      }
+      else {
+         System.out.println("ERROR: Menu choice not correct.");
+         System.out.println("Program will now exit!");
+         System.exit(1);
       }
    }
 }
