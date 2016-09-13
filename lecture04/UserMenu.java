@@ -20,25 +20,26 @@ public class UserMenu {
          "Enter (1-4) for choice: ";
 
       //Define constants for the menu choices
-      int ADD_CHOICE = 1;
-      int AREA_CHOICE = 2;
-      int REMAINDER_CHOICE = 3;
-      int EXIT_CHOICE = 4;   
+      final int ADD_CHOICE = 1;
+      final int AREA_CHOICE = 2;
+      final int REMAINDER_CHOICE = 3;
+      final int EXIT_CHOICE = 4;   
 
       System.out.print(USER_MENU);
       int choice = in.nextInt();
-
+      
       if (choice == ADD_CHOICE) {
          System.out.print("Enter two numbers: ");
          int x = in.nextInt();
          int y = in.nextInt();
 
          //Validate that x and y are not negative.
-         if (x < 0) || (y < 0) {
+         if  ( (x < 0) || (y < 0) ) {
             System.out.println("ERROR: x or y cannot be negative.");
             System.out.println("Program will now exit!");
             System.exit(1);
          }
+         int sum = x + y;
 
          System.out.println("The sum of " + x + ", " + y + " is " + sum);
       }
