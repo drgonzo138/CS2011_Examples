@@ -8,8 +8,11 @@ public class ChineseZodiac {
     int year = input.nextInt();
     
     switch (year % 12) {
-      case 0: System.out.println("monkey"); break;
-      case 1: System.out.println("rooster"); break;
+      case 0:
+        System.out.println("monkey"); 
+        break;
+      case 1: System.out.println("rooster"); 
+              break;
       case 2: System.out.println("dog"); break;
       case 3: System.out.println("pig"); break;
       case 4: System.out.println("rat"); break;

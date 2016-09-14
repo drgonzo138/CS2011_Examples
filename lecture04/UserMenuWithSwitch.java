@@ -59,5 +59,8 @@ public class UserMenuWithSwitch {
             System.out.println("Program will now exit!");
             System.exit(1);
       }
+
+
+
    }
 }
