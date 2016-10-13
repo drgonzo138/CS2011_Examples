@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class MathFunctions {
 	public static void main(String[] args) {
 
+		Scanner in = new Scanner(System.in);
+		
 		double degrees = 90;
 		
 		//double radians = Math.toRadians(degrees);
@@ -9,7 +13,7 @@ public class MathFunctions {
 
 		System.out.println(result);
 
-		Math.ceil(3.1); //4.0
+	    Math.ceil(3.0); //4.0
 		Math.ceil(5.9); //6.0
 
 		Math.floor(4.9); //4.0
