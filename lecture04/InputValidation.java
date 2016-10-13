@@ -4,7 +4,7 @@ public class InputValidation {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.print("Enter a positive integer: ")
+		System.out.print("Enter a positive integer: ");
 		int x = in.nextInt();
 
 		//Validate x
