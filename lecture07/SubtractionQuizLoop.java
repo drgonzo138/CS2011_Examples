@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class SubtractionQuizLoop {
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
+		
 		final int NUMBER_OF_QUESTIONS = 5; // Number of questions
 		int correctCount = 0; // Count the number of correct answers
-		int count = 0; // Count the number of questions
-		long startTime = System.currentTimeMillis();
+		int count = 1; // Count the number of questions
 		String output = ""; // output string is initially empty
 		Scanner input = new Scanner(System.in);
 
-		while (count < NUMBER_OF_QUESTIONS) {
+		while (count <= NUMBER_OF_QUESTIONS) {
 			// 1. Generate two random single-digit integers
 			int number1 = (int)(Math.random() * 10);
 			int number2 = (int)(Math.random() * 10);
@@ -35,11 +36,12 @@ public class SubtractionQuizLoop {
 				System.out.println("Your answer is wrong.\n" + number1 
 						+ " - " + number2 + " should be " + (number1 - number2) + "\n");
 			}
-			// Increase the count
-			count++;
-
+			
 			output += "\n" + number1 + "-" + number2 + "=" + answer + 
 					((number1 - number2 == answer) ? " correct" : " wrong");
+			
+			// Increase the count
+			count++;
 		}
 
 		long endTime = System.currentTimeMillis();
