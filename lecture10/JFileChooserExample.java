@@ -5,7 +5,8 @@ import javax.swing.JFileChooser;
 public class JFileChooserExample {
 
 	public static void main(String[] args) {
-		JFileChooser jfc = new JFileChooser();
+		//The "." means the current working directory.
+		JFileChooser jfc = new JFileChooser(".");
 		
 		//This will display the JFileChooser dialog box and all the user
 		//to choose a file.
