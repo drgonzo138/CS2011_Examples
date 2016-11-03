@@ -1,5 +1,4 @@
 
-
 public class TestMax {
 
 	/** Main method */
@@ -10,18 +9,20 @@ public class TestMax {
 		int a = i + j + max(i, j);
 		System.out.println("The maximum between " + i + " and " + j + " is " + k);
 		System.out.println("The maximum between " + i + " and " + j + " is " + max(i, j));
-		
+
 	}
 
 	/** Return the max between two numbers */
 	public static int max(int num1, int num2) {
 		int result = num1;
 
-		if (num1 > num2)
+		if (num1 > num2) {
 			result = num1;
-		else if (num1 < num2)
+		} 
+		else if (num1 < num2) {
 			result = num2;
-
+		}
+			
 		return result;
 	}
 }
