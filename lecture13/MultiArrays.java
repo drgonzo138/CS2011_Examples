@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class MultiArrays {
 
+	//NOTE: Examples taken from textbook, see textbook for other examples.
 	public static void main(String[] args) {
 		int[][] table = initRandomData(5, 10);
 		
